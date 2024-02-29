@@ -1,0 +1,144 @@
+21-Jul-2020 18:32:33 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:32:35 INFO - HikariPool-1 - Start completed.
+21-Jul-2020 18:33:59 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:34:00 INFO - HikariPool-1 - Start completed.
+21-Jul-2020 18:34:29 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:34:30 INFO - HikariPool-1 - Start completed.
+21-Jul-2020 18:35:05 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:35:06 INFO - HikariPool-1 - Start completed.
+21-Jul-2020 18:35:30 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:35:31 INFO - HikariPool-1 - Start completed.
+21-Jul-2020 18:35:54 INFO - HikariPool-1 - Starting...
+21-Jul-2020 18:35:55 INFO - HikariPool-1 - Start completed.
+29-Dec-2021 15:01:41 INFO - HikariPool-1 - Starting...
+29-Dec-2021 15:01:42 INFO - HikariPool-1 - Start completed.
+29-Dec-2021 15:01:42 INFO - HikariPool-1 - Shutdown initiated...
+29-Dec-2021 15:01:42 INFO - HikariPool-1 - Shutdown completed.
+29-Dec-2021 17:45:27 INFO - HikariPool-1 - Starting...
+29-Dec-2021 17:45:28 INFO - HikariPool-1 - Start completed.
+29-Dec-2021 17:45:28 ERROR - PreparedStatementCallback; uncategorized SQLException for SQL [select * from customer where customer_id = ?]; SQL state [S0022]; error code [0]; Column 'emailid' not found.; nested exception is java.sql.SQLException: Column 'emailid' not found.
+org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [select * from customer where customer_id = ?]; SQL state [S0022]; error code [0]; Column 'emailid' not found.; nested exception is java.sql.SQLException: Column 'emailid' not found.
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:879) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at com.infy.repository.CustomerRepositoryImpl.getCustomer(CustomerRepositoryImpl.java:43) ~[classes/:?]
+	at com.infy.repository.CustomerRepositoryImpl$$FastClassBySpringCGLIB$$74ed14a3.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) [spring-aop-5.3.14.jar:5.3.14]
+	at com.infy.repository.CustomerRepositoryImpl$$EnhancerBySpringCGLIB$$34ae05ff.getCustomer(<generated>) [classes/:?]
+	at com.infy.service.CustomerServiceImpl.addCustomer(CustomerServiceImpl.java:37) [classes/:?]
+	at com.infy.service.CustomerServiceImpl$$FastClassBySpringCGLIB$$5a044175.invoke(<generated>) [classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) [spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) [spring-aop-5.3.14.jar:5.3.14]
+	at com.infy.service.CustomerServiceImpl$$EnhancerBySpringCGLIB$$1b651fb5.addCustomer(<generated>) [classes/:?]
+	at com.infy.DemoSpringJdbcApplication.addCustomer(DemoSpringJdbcApplication.java:49) [classes/:?]
+	at com.infy.DemoSpringJdbcApplication.run(DemoSpringJdbcApplication.java:33) [classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) [spring-boot-2.6.2.jar:2.6.2]
+	at com.infy.DemoSpringJdbcApplication.main(DemoSpringJdbcApplication.java:29) [classes/:?]
+Caused by: java.sql.SQLException: Column 'emailid' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:581) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:888) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java) ~[HikariCP-4.0.3.jar:?]
+	at com.infy.repository.CustomerRowMapper.mapRow(CustomerRowMapper.java:14) ~[classes/:?]
+	at com.infy.repository.CustomerRowMapper.mapRow(CustomerRowMapper.java:1) ~[classes/:?]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:723) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	... 43 more
+29-Dec-2021 17:45:28 ERROR - PreparedStatementCallback; uncategorized SQLException for SQL [select * from customer where customer_id = ?]; SQL state [S0022]; error code [0]; Column 'emailid' not found.; nested exception is java.sql.SQLException: Column 'emailid' not found.
+org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [select * from customer where customer_id = ?]; SQL state [S0022]; error code [0]; Column 'emailid' not found.; nested exception is java.sql.SQLException: Column 'emailid' not found.
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1542) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:879) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at com.infy.repository.CustomerRepositoryImpl.getCustomer(CustomerRepositoryImpl.java:43) ~[classes/:?]
+	at com.infy.repository.CustomerRepositoryImpl$$FastClassBySpringCGLIB$$74ed14a3.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.14.jar:5.3.14]
+	at com.infy.repository.CustomerRepositoryImpl$$EnhancerBySpringCGLIB$$34ae05ff.getCustomer(<generated>) ~[classes/:?]
+	at com.infy.service.CustomerServiceImpl.addCustomer(CustomerServiceImpl.java:37) ~[classes/:?]
+	at com.infy.service.CustomerServiceImpl$$FastClassBySpringCGLIB$$5a044175.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) [spring-aop-5.3.14.jar:5.3.14]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) [spring-aop-5.3.14.jar:5.3.14]
+	at com.infy.service.CustomerServiceImpl$$EnhancerBySpringCGLIB$$1b651fb5.addCustomer(<generated>) [classes/:?]
+	at com.infy.DemoSpringJdbcApplication.addCustomer(DemoSpringJdbcApplication.java:49) [classes/:?]
+	at com.infy.DemoSpringJdbcApplication.run(DemoSpringJdbcApplication.java:33) [classes/:?]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:767) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:751) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.2.jar:2.6.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) [spring-boot-2.6.2.jar:2.6.2]
+	at com.infy.DemoSpringJdbcApplication.main(DemoSpringJdbcApplication.java:29) [classes/:?]
+Caused by: java.sql.SQLException: Column 'emailid' not found.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.findColumn(ResultSetImpl.java:581) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:888) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getString(HikariProxyResultSet.java) ~[HikariCP-4.0.3.jar:?]
+	at com.infy.repository.CustomerRowMapper.mapRow(CustomerRowMapper.java:14) ~[classes/:?]
+	at com.infy.repository.CustomerRowMapper.mapRow(CustomerRowMapper.java:1) ~[classes/:?]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:94) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.RowMapperResultSetExtractor.extractData(RowMapperResultSetExtractor.java:61) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:723) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651) ~[spring-jdbc-5.3.14.jar:5.3.14]
+	... 43 more
+29-Dec-2021 17:45:28 INFO - HikariPool-1 - Shutdown initiated...
+29-Dec-2021 17:45:28 INFO - HikariPool-1 - Shutdown completed.

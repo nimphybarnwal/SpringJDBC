@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: vikash.pandey03
+Build-Jdk: 11.0.12
+Implementation-Title: Demo_SpringJDBC
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.infy
+Implementation-URL: https://spring.io/projects/spring-boot/Demo_SpringJD
+ BC
+Created-By: Maven Integration for Eclipse
+
